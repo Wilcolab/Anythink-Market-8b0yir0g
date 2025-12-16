@@ -1,0 +1,29 @@
+CHAIN PROMPT: Creating a toKebabCase Function
+
+STEP 1: UNDERSTAND THE REQUIREMENT
+Create a JavaScript function called `toKebabCase` that converts strings from various formats into kebab-case (words separated by hyphens in lowercase). The function should handle:
+- camelCase input (e.g., 'helloWorld' → 'hello-world')
+- PascalCase input (e.g., 'HelloWorld' → 'hello-world')
+- snake_case input (e.g., 'hello_world' → 'hello-world')
+- Space-separated input (e.g., 'hello world' → 'hello-world')
+- Already kebab-cased input (e.g., 'hello-world' → 'hello-world')
+
+STEP 2: BUILD THE CORE LOGIC
+Based on the requirement from Step 1, write the function body that:
+1. Validates the input to ensure it's a string
+2. Handles edge cases (empty strings, null, undefined)
+3. Returns an empty string or throws an error for invalid inputs
+4. Uses regex patterns to detect and convert different case formats:
+   - Insert a hyphen before uppercase letters (for camelCase/PascalCase)
+   - Replace underscores, spaces, and dots with hyphens
+   - Convert the entire result to lowercase
+   - Clean up any duplicate hyphens
+
+STEP 3: ADD DOCUMENTATION AND EXAMPLES
+Enhance the function from Step 2 by adding:
+1. A JSDoc comment block with @param, @returns, and @example tags
+2. At least 5 usage examples showing different input formats
+3. Clear comments explaining each regex operation
+4. Export the function using module.exports for Node.js compatibility
+
+FINAL OUTPUT: Complete the toKebabCase function with all requirements from Steps 1-3 integrated, ensuring it is production-ready and well-documented.
